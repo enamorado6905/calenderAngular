@@ -1,0 +1,17 @@
+<section>
+  <div class="timer">
+ <div class="timer-title">
+      <span>StopWatch</span>
+    </div>
+    <div class="time-count">
+      <span>{{ hours }}:{{ minutes }}:{{ seconds }}</span>
+    </div>
+    <div class="content-button">
+      <button class="button" (click)="start()" [hidden]="!isPause">
+        Iniciar
+      </button>
+      <button class="button" (click)="pause()" [hidden]="isPause">Pause</button>
+      <button class="button" (click)="stop()">Parar</button>
+    </div>
+  </div>
+</section>
