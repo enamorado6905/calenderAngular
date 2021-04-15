@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'lib-stopwatch',
   templateUrl: './stopwatch.component.html',
-  styleUrls: ['../styles.less'],
+  styleUrls: ['../../styles.less'],
 })
 export class StopWatchComponent implements OnInit {
   hours = 0;

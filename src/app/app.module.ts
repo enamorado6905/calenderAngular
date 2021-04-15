@@ -8,6 +8,7 @@ import { StoreModule } from '@ngrx/store';
 import { GlobalModule } from './global/global.module';
 import { CoreModule } from './core/index';
 import { SharedModule } from './shared/index';
+import { ClockModule } from '../../projects/clock/src/public-api';
 import { AppRoutingModule } from './app-routing.module';
 
 import { LayoutsComponent } from './layouts/layouts.component';
@@ -20,6 +21,7 @@ import { environment } from '../environments/environment';
     GlobalModule,
     CoreModule,
     SharedModule,
+    ClockModule,
     AppRoutingModule,
     StoreModule,
     BrowserAnimationsModule,

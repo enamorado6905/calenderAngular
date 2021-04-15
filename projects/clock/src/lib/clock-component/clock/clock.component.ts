@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { timer, Observable, Subject, Subscription } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { valuClock } from '../interface/valueclock';
+import { valuClock } from '../../interface/valueclock';
 
 @Component({
   selector: 'lib-clock',
   templateUrl: './clock.component.html',
-  styleUrls: ['../styles.less'],
+  styleUrls: ['../../styles.less'],
 })
 export class ClockComponent implements OnInit, OnDestroy {
   private clientesSubscription: Subscription[] = [];

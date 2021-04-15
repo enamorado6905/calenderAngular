@@ -1,0 +1,5 @@
+<div class="navegation">
+  <button type="button" (click)="goToHome()" *ngIf="isHome" ><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+  <button type="button" (click)="goToHome()"><i class="fa fa-home" aria-hidden="true"></i></button>
+  <button type="button" (click)="goToRight()" *ngIf="urls.length>1 && !isHome" ><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+</div>

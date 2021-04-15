@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { timer, Observable, Subject, Subscription } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { valuClock } from '../interface/valueclock';
+import { valuClock } from '../../interface/valueclock';
 
 @Component({
   selector: 'lib-timer',
   templateUrl: './timer.component.html',
-  styleUrls: ['../styles.less'],
+  styleUrls: ['../../styles.less'],
 })
 export class TimerComponent implements OnInit, OnDestroy {
   _second = 1000;

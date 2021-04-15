@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ClockComponent } from './clock/clock.component';
-import { TimerComponent } from './timer/timer.component';
-import { StopWatchComponent } from './stopwatch/stopwatch.component';
-import { DateComponent } from './date/date.component';
+import { CalenderComponentModule } from './calender-component/calender-component.module';
+import { ClockComponentModule } from './clock-component/clock-component.module';
+import { WizardComponentModule } from './wizard-component/wizard-component.module';
+
 @NgModule({
-  imports: [CommonModule],
-  declarations: [
-    ClockComponent,
-    TimerComponent,
-    DateComponent,
-    StopWatchComponent,
+  imports: [
+    CommonModule,
+    CalenderComponentModule,
+    ClockComponentModule,
+    WizardComponentModule,
   ],
-  exports: [ClockComponent, TimerComponent, DateComponent, StopWatchComponent],
+  exports: [
+    CalenderComponentModule,
+    ClockComponentModule,
+    WizardComponentModule,
+  ],
 })
 export class ClockModule {}
