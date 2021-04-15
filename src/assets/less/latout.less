@@ -8,7 +8,8 @@ body {
 .main {
   background-color: #212529;
   height: 100vh;
-
+  width: 100%;
+  overflow: auto;
   .app-navegation {
     position: fixed;
     width: 100%;
@@ -45,18 +46,19 @@ body {
     align-items: center;
     position: relative;
     height: 100%;
+    width: 100%;
 
     .content-calender {
       margin: 50px;
       display: block;
       height: max-content;
       width: max-content;
-      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      overflow: auto;
 
       div {
         text-align: center;
